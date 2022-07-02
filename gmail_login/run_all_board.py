@@ -20,9 +20,9 @@ while 1:
         CN_274 = CN274()
         CN_274.full_function()
 
-        # from CN299.main import CN299
-        # CN_299 = CN299()
-        # CN_299.maximize_voltage()
+        from CN299.main import CN299
+        CN_299 = CN299()
+        CN_299.maximize_voltage()
 
         # from CN300.main import CN300
         # CN_300 = CN300()
