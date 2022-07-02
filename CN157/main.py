@@ -1,7 +1,7 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from CN157 import CN157_const as CN
+import CN157_const as CN
 from Common_function import common
 import constants as CS
 
@@ -28,7 +28,7 @@ def header_function():
         CF.old_update_progress_log(pdf)
         time.sleep(5)
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\live_image.png',
                       'live_image.png')
         time.sleep(5)
 
@@ -46,7 +46,7 @@ class CN157:
         CF.wait_until_old_progress('Light Intensity set to 0%')
         time.sleep(3)
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_0%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\manual_0%.png',
                       'manual_0%.png')
         time.sleep(5)
         slider = CF.driver.find_element(By.XPATH,
@@ -60,7 +60,7 @@ class CN157:
         CF.wait_until_old_progress('Light Intensity set to 56%')
         time.sleep(3)
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_56%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\manual_56%.png',
                       'manual_56%.png')
         time.sleep(5)
         CF.actions.move_to_element(slider).pause(1).click_and_hold(slider).move_by_offset(180, 0). \
@@ -70,7 +70,7 @@ class CN157:
         CF.wait_until_old_progress('Light Intensity set to 100%')
         time.sleep(3)
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_95%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\manual_95%.png',
                       'manual_95%.png')
         time.sleep(5)
         CF.old_update_progress_log(pdf)
@@ -91,24 +91,24 @@ class CN157:
         CF.click_button(CN.auto_apply_button)
         CF.wait_until_old_progress('Light Intensity set to 10%')
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_10%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\auto_10%.png',
                       'auto_10%.png')
         CF.wait_until_old_progress('Light Intensity set to 20%')
         # CF.old_write_result(pdf, 'Image : ', 'Auto Mode')
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_20%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\auto_20%.png',
                       'auto_20%.png')
         CF.wait_until_old_progress('Light Intensity set to 30%')
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_30%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\auto_30%.png',
                       'auto_30%.png')
         CF.wait_until_old_progress('Light Intensity set to 40%')
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_40%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\auto_40%.png',
                       'auto_40%.png')
         CF.wait_until_old_progress('Light Intensity set to 50%')
         CF.take_image(pdf, CN.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_50%.png',
+                      'D:\\Automation\\Projects\\CN157\\screenshot\\auto_50%.png',
                       'auto_50%.png')
         time.sleep(5)
         CF.old_update_progress_log(pdf)

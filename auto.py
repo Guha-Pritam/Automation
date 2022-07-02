@@ -1,4 +1,4 @@
-screenshot_path = r"./screenshot"
+screenshot_path = r"gmail_login/screenshot"
 
 # def common_text():
 # store the newly added lines in file2 on file3
