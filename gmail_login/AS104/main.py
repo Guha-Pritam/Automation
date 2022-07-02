@@ -32,7 +32,7 @@ def header_function():
 
         CF.driver.switch_to.parent_frame()
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\gmail_login\\screenshot\\live_image.png',
                       'live_image.png')
         time.sleep(3)
 
@@ -56,11 +56,11 @@ class AS104:
         time.sleep(5)
 
         CF.take_image(pdf, AS.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_config_AS104.png',
+                      'D:\\Automation\\Projects\\gmail_login\\screenshot\\graph_config_AS104.png',
                       'graph_config_AS104.png')
 
         CF.take_image(pdf, AS.system_status_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\system_config_AS104.png',
+                      'D:\\Automation\\Projects\\gmail_login\\screenshot\\system_config_AS104.png',
                       'system_config_AS104.png')
         time.sleep(5)
         CF.old_update_progress_log(pdf)
@@ -98,11 +98,11 @@ class AS104:
         time.sleep(5)
         CF.wait_until_old_progress('Battery Disconnected')
         CF.take_image(pdf, AS.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_rush_AS104.png',
+                      'D:\\Automation\\Projects\\gmail_login\\screenshot\\graph_rush_AS104.png',
                       'graph_rush_AS104.png')
 
         CF.take_image(pdf, AS.system_status_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\system_rush_AS104.png',
+                      'D:\\Automation\\Projects\\gmail_login\\screenshot\\system_rush_AS104.png',
                       'system_rush_AS104.png')
         time.sleep(5)
         CF.old_update_progress_log(pdf)
@@ -119,4 +119,4 @@ class AS104:
 if __name__ == "__main__":
     stu = AS104()
     stu.config_function()
-    stu.in_rush()
+    # stu.in_rush()
