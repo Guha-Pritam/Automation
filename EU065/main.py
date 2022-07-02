@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from EU065 import EU065_const as EU
-from Common_function import common
-import constants as CS
+from Projects.EU065 import EU065_const as EU
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -26,7 +26,7 @@ def header_function():
         CF.write_result(pdf, 'Connection : ', 'SYSTEM READY')
         CF.old_update_progress_log(pdf)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
         time.sleep(5)
 
@@ -41,7 +41,7 @@ class EU065:
         CF.write_result(pdf, 'Light-Control-Function : ', 'SYSTEM READY')
         time.sleep(5)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\pre_forward_live.png',
+                      'D:\\Automation\\Projects\\screenshot\\pre_forward_live.png',
                       'pre_forward_live.png')
         time.sleep(5)
         slider = CF.driver.find_element(By.XPATH, EU.slider_button)
@@ -54,7 +54,7 @@ class EU065:
         CF.click_button(EU.apply_button)
         CF.wait_until_old_progress('Moved forward')
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\after_forward_live.png',
+                      'D:\\Automation\\Projects\\screenshot\\after_forward_live.png',
                       'after_forward_live.png')
         time.sleep(3)
         CF.old_update_progress_log(pdf)
@@ -95,7 +95,7 @@ class EU065:
         CF.click_button(EU.apply_button)
         CF.wait_until_old_progress('Moved reverse')
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\after_RGB_live.png',
+                      'D:\\Automation\\Projects\\screenshot\\after_RGB_live.png',
                       'after_RGB_live.png')
         time.sleep(3)
         CF.old_update_progress_log(pdf)

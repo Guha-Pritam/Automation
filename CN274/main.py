@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from CN274 import CN274_const as CN
-from Common_function import common
-import constants as CS
+from Projects.CN274 import CN274_const as CN
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -30,7 +30,7 @@ def header_function():
         CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
         CF.old_update_progress_log(pdf)
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
 
 
@@ -58,12 +58,12 @@ class CN274:
         CF.driver.switch_to.parent_frame()
 
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\Full_live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\Full_live_image.png',
                       'Full_live_image.png')
         time.sleep(5)
         CF.click_button(CN.maximize_graph)
         time.sleep(5)
-        CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph.png',
+        CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\graph.png',
                       'graph.png')
         CF.click_button(CN.maximize_graph)
         time.sleep(5)

@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from EU084 import EU084_const as EU
-from Common_function import common
-import constants as CS
+from Projects.EU084 import EU084_const as EU
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()

@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from EU036 import EU036_const as EU
-from Common_function import common
-import constants as CS
+from Projects.EU036 import EU036_const as EU
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -22,7 +22,7 @@ def main_function():
         CF.update_progress_log(pdf)
         time.sleep(5)
         print("Connection secure....")
-        CF.take_image(pdf, EU.live_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_video.png',
+        CF.take_image(pdf, EU.live_video_path, 'D:\\Automation\\Projects\\screenshot\\live_video.png',
                       'live_video.png')
 
 
@@ -45,7 +45,7 @@ class EU036:
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
 
-        CF.take_image(pdf, EU.main_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\main_video.png',
+        CF.take_image(pdf, EU.main_video_path, 'D:\\Automation\\Projects\\screenshot\\main_video.png',
                       'main_video.png')
         time.sleep(3)
         CF.click_button(EU.maximize_live_video)
@@ -71,7 +71,7 @@ class EU036:
         CF.update_progress_log(pdf)
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
-        CF.take_image(pdf, EU.main_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\main_video_2.png',
+        CF.take_image(pdf, EU.main_video_path, 'D:\\Automation\\Projects\\screenshot\\main_video_2.png',
                       'main_video_2.png')
         CF.click_button(EU.maximize_live_video)
 

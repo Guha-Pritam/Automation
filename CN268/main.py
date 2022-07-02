@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from CN268 import CN268_const as CN
-from Common_function import common
-import constants as CS
+from Projects.CN268 import CN268_const as CN
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -25,23 +25,23 @@ class CN268:
             time.sleep(5)
             CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
             CF.update_progress_log(pdf)
-            CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\CN268_graph2.png',
+            CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\CN268_graph2.png',
                           'CN268_graph2.png')
             time.sleep(3)
             CF.click_button(CN.start_button)
             time.sleep(8)
             CF.click_button(CN.maximize_live_video)
             time.sleep(5)
-            CF.take_image(pdf, CN.live_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\CN268_live_video.png',
+            CF.take_image(pdf, CN.live_video_path, 'D:\\Automation\\Projects\\screenshot\\CN268_live_video.png',
                           'CN268_live_video.png')
             CF.click_button(CN.maximize_live_video)
             time.sleep(3)
             CF.update_progress_log(pdf)
             time.sleep(3)
-            CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\CN268_graph.png',
+            CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\CN268_graph.png',
                           'CN268_graph.png')
             CF.write_result(pdf, 'Slave--Log : ', 'START EVALUATING')
-            CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\CN268_graph1.png',
+            CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\CN268_graph1.png',
                           'CN268_graph1.png')
             time.sleep(5)
 

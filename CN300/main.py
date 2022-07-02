@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from CN300 import CN300_const as CN
-from Common_function import common
-import constants as CS
+from Projects.CN300 import CN300_const as CN
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -31,7 +31,7 @@ def header_function():
         CF.old_update_progress_log(pdf)
         time.sleep(5)
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
 
 
@@ -59,12 +59,12 @@ class CN300:
         CF.driver.switch_to.parent_frame()
 
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\Full_live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\Full_live_image.png',
                       'Full_live_image.png')
         time.sleep(5)
         CF.click_button(CN.maximize_graph)
         time.sleep(5)
-        CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph.png',
+        CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\graph.png',
                       'graph.png')
         CF.click_button(CN.maximize_graph)
         CF.old_update_progress_log(pdf)
@@ -74,11 +74,11 @@ class CN300:
         time.sleep(5)
         CF.click_button(CN.maximize_graph)
         time.sleep(5)
-        CF.take_image(pdf, CN.graph_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph1.png',
+        CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\graph1.png',
                       'graph1.png')
         CF.click_button(CN.maximize_graph)
 
-        CF.take_image(pdf, CN.capacitor_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\voltage.png',
+        CF.take_image(pdf, CN.capacitor_path, 'D:\\Automation\\Projects\\screenshot\\voltage.png',
                       'voltage.png')
         time.sleep(5)
 

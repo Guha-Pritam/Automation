@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-import CN299_const as CN
-from Common_function import common
-import constants as CS
+from Projects.CN299 import CN299_const as CN
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -31,7 +31,7 @@ def header_function():
 
         CF.driver.switch_to.parent_frame()
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\Automation\\Projects\\CN299\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
 
 
@@ -56,7 +56,7 @@ class CN299:
         time.sleep(5)
         CF.write_result(pdf, '5V value coming : ', 'Input Voltage, Output Voltage and VLDO read from board is '
                                                    'successful')
-        CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\CN299\\screenshot\\graph.png',
+        CF.take_image(pdf, CN.graph_path, 'D:\\Automation\\Projects\\screenshot\\graph.png',
                       'graph.png')
         CF.click_button(CN.maximize_graph_path)
         CF.old_update_progress_log(pdf)

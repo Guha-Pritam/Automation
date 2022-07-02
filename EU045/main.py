@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from EU045 import EU045_const as EU
-from Common_function import common
-import constants as CS
+from Projects.EU045 import EU045_const as EU
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -18,11 +18,11 @@ def header_function():
         CF.write_header(pdf, 'EU045')
         CF.wait_until_progress("SYSTEM READY")
         CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\appli_video'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\appli_video'
                                                       '.png', 'appli_video.png')
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
-        CF.take_image(pdf, EU.live_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_video.png',
+        CF.take_image(pdf, EU.live_video_path, 'D:\\Automation\\Projects\\screenshot\\live_video.png',
                       'live_video.png')
         CF.click_button(EU.maximize_live_video)
         time.sleep(8)
@@ -43,19 +43,19 @@ class EU045:
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
         CF.take_image(pdf, EU.live_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\alcohol_live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\alcohol_live_video.png',
                       'alcohol_live_video.png')
         CF.click_button(EU.maximize_live_video)
         CF.wait_until_progress('Inducing of gas turned OFF')
         CF.take_image(pdf, EU.application_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\alcohol_apply'
+                      'D:\\Automation\\Projects\\screenshot\\alcohol_apply'
                       '.png', 'alcohol_apply.png')
         # CLICKING Device GAS SHOT
         CF.click_button(EU.device_button)
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : DEVICE -- ', 'Inducing of gas turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\device_gas'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\device_gas'
                                                       '.png', 'device_gas.png')
         time.sleep(5)
 
@@ -64,7 +64,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : SENSORS -- ', 'Inducing of gas turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\sensors_gas'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\sensors_gas'
                                                       '.png', 'sensors_gas.png')
         time.sleep(5)
 
@@ -73,7 +73,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : GRAPHS -- ', 'Inducing of gas turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_gas'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\graph_gas'
                                                       '.png', 'graph_gas.png')
         time.sleep(5)
 
@@ -82,7 +82,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : TABLES -- ', 'Inducing of gas turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\table_gas'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\table_gas'
                                                       '.png', 'table_gas.png')
         time.sleep(5)
 
@@ -91,7 +91,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : SETTINGS -- ', 'Inducing of gas turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\settings_gas.png', 'settings_gas.png')
         time.sleep(5)
         CF.update_progress_log(pdf)
@@ -113,18 +113,18 @@ class EU045:
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
         CF.take_image(pdf, EU.live_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\humidity_live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\humidity_live_video.png',
                       'humidity_live_video.png')
         CF.click_button(EU.maximize_live_video)
         CF.wait_until_progress('Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\humidity_apply.png', 'humidity_apply.png')
         # CLICKING Device GAS SHOT
         CF.click_button(EU.device_button)
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : DEVICE -- ', 'Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\device_humidity.png', 'device_humidity.png')
         time.sleep(5)
 
@@ -133,7 +133,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : SENSORS -- ', 'Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\sensors_humidity.png', 'sensors_humidity.png')
         time.sleep(5)
 
@@ -142,7 +142,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : GRAPHS -- ', 'Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\graph_humidity.png', 'graph_humidity.png')
         time.sleep(5)
 
@@ -151,7 +151,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : TABLES -- ', 'Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\table_humidity.png', 'table_humidity.png')
         time.sleep(5)
 
@@ -160,7 +160,7 @@ class EU045:
         time.sleep(5)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : SETTINGS -- ', 'Humidifier turned OFF')
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\settings_humidity.png', 'settings_humidity.png')
         time.sleep(5)
         CF.update_progress_log(pdf)
@@ -182,18 +182,18 @@ class EU045:
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
         CF.take_image(pdf, EU.live_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\temperature_live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\temperature_live_video.png',
                       'temperature_live_video.png')
         CF.click_button(EU.maximize_live_video)
         CF.wait_until_progress('Temperature Increased')
         CF.take_image(pdf, EU.application_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\temperature_apply'
+                      'D:\\Automation\\Projects\\screenshot\\temperature_apply'
                       '.png', 'temperature_apply.png')
         # CLICKING Device GAS SHOT
         CF.click_button(EU.device_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\device_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\device_temp'
                                                       '.png', 'device_temp.png')
         time.sleep(5)
 
@@ -201,7 +201,7 @@ class EU045:
         CF.click_button(EU.sensor_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\sensors_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\sensors_temp'
                                                       '.png', 'sensors_temp.png')
         time.sleep(5)
 
@@ -209,7 +209,7 @@ class EU045:
         CF.click_button(EU.graph_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\graph_temp'
                                                       '.png', 'graph_temp.png')
         time.sleep(5)
 
@@ -217,7 +217,7 @@ class EU045:
         CF.click_button(EU.tables_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\table_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\table_temp'
                                                       '.png', 'table_temp.png')
         time.sleep(5)
 
@@ -225,7 +225,7 @@ class EU045:
         CF.click_button(EU.setting_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\settings_temp.png', 'settings_temp.png')
         time.sleep(5)
         CF.update_progress_log(pdf)
@@ -245,18 +245,18 @@ class EU045:
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
         CF.take_image(pdf, EU.live_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\air_live_video.png',
                       'air_live_video.png')
         CF.click_button(EU.maximize_live_video)
         CF.wait_until_progress('Blower turned ON...Clearing Air')
         CF.take_image(pdf, EU.application_video_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_apply'
+                      'D:\\Automation\\Projects\\screenshot\\air_apply'
                       '.png', 'air_apply.png')
         # CLICKING Device GAS SHOT
         CF.click_button(EU.device_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\air_temp'
                                                       '.png', 'air_temp.png')
         time.sleep(5)
 
@@ -264,7 +264,7 @@ class EU045:
         CF.click_button(EU.sensor_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\air_temp'
                                                       '.png', 'air_temp.png')
         time.sleep(5)
 
@@ -272,7 +272,7 @@ class EU045:
         CF.click_button(EU.graph_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\air_temp'
                                                       '.png', 'air_temp.png')
         time.sleep(5)
 
@@ -280,7 +280,7 @@ class EU045:
         CF.click_button(EU.tables_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\air_temp'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\air_temp'
                                                       '.png', 'air_temp.png')
         time.sleep(5)
 
@@ -288,7 +288,7 @@ class EU045:
         CF.click_button(EU.setting_button)
         time.sleep(5)
         CF.wait_until_connection_path()
-        CF.take_image(pdf, EU.application_video_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
                                                       '\\air_temp.png', 'air_temp.png')
         time.sleep(5)
         CF.update_progress_log(pdf)
