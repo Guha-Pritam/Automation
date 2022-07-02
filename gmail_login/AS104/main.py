@@ -1,7 +1,7 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from AS104 import AS104_const as AS
+import AS104_const as AS
 from Common_function import common
 import constants as CS
 
