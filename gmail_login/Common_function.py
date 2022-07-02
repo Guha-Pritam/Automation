@@ -23,7 +23,7 @@ SLAVE_LOG = []
 INFORMATION = []
 
 
-class common:
+class Common:
     def __init__(self):
         self.options = webdriver.ChromeOptions()
         # self.options.add_argument(r'--user-data-dir=C:\Users\THIS PC\Desktop\gmail login\session')
