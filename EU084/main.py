@@ -27,7 +27,7 @@ def header_function():
         CF.old_update_progress_log(pdf)
         time.sleep(5)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
         time.sleep(5)
 
@@ -42,7 +42,7 @@ class EU084:
         CF.click_button(EU.LCD_backlight_button)
         time.sleep(5)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_video.png',
                       'live_video.png')
         time.sleep(3)
         CF.click_button(EU.temp_limit_path)
@@ -61,7 +61,7 @@ class EU084:
         CF.click_button(EU.start_button)
         CF.wait_until_old_connection_path()
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\auto_video.png',
                       'auto_video.png')
         time.sleep(15)
         CF.click_button(EU.maximize_graph)
@@ -87,7 +87,7 @@ class EU084:
         CF.click_button(EU.LCD_backlight_button)
         time.sleep(5)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_live_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\manual_live_video.png',
                       'manual_live_video.png')
         time.sleep(3)
         CF.click_button(EU.temp_limit_path)
@@ -103,13 +103,13 @@ class EU084:
         CF.click_button(EU.set_button)
         CF.wait_until_old_connection_path()
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_video.png',
+                      'D:\\Automation\\Projects\\screenshot\\manual_video.png',
                       'manual_video.png')
         time.sleep(15)
         CF.click_button(EU.maximize_graph)
         time.sleep(5)
         CF.take_image(pdf, EU.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\manual_graph.png',
+                      'D:\\Automation\\Projects\\screenshot\\manual_graph.png',
                       'manual_graph.png')
         CF.click_button(EU.maximize_graph)
         time.sleep(5)

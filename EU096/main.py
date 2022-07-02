@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from EU096 import EU096_const as EU
-from Common_function import common
-import constants as CS
+from Projects.EU096 import EU096_const as EU
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -30,7 +30,7 @@ def header_function():
         CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
         CF.old_update_progress_log(pdf)
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\live_image.png',
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
                       'live_image.png')
 
 
@@ -61,7 +61,7 @@ class EU096:
         CF.wait_until_old_progress('Configured board with ON delay timer')
         time.sleep(5)
         CF.take_image(pdf, EU.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_set.png',
+                      'D:\\Automation\\Projects\\screenshot\\graph_set.png',
                       'graph_set.png')
         time.sleep(3)
         CF.old_update_progress_log(pdf)
@@ -71,7 +71,7 @@ class EU096:
         CF.wait_until_old_progress('Power OFF delay waveforms are captured')
         time.sleep(5)
         CF.take_image(pdf, EU.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_power_off.png',
+                      'D:\\Automation\\Projects\\screenshot\\graph_power_off.png',
                       'graph_power_off.png')
         time.sleep(3)
         CF.old_update_progress_log(pdf)
@@ -81,7 +81,7 @@ class EU096:
         CF.wait_until_old_progress('Power ON delay waveforms are captured')
         time.sleep(5)
         CF.take_image(pdf, EU.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\graph_power_on.png',
+                      'D:\\Automation\\Projects\\screenshot\\graph_power_on.png',
                       'graph_power_on.png')
         time.sleep(3)
         CF.old_update_progress_log(pdf)

@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from RZ_A2M import RZ_A2M_const as RZ
-from Common_function import common
-import constants as CS
+from Projects.RZ_A2M import RZ_A2M_const as RZ
+from Projects.Common_function import common
+import Projects.constants as CS
 
 pdf = FPDF()
 CF = common()
@@ -22,11 +22,11 @@ def header_function():
         CF.update_progress_log(pdf)
         time.sleep(5)
         CF.take_image(pdf, RZ.setup_stream_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\setup_stream1.png',
+                      'D:\\Automation\\Projects\\screenshot\\setup_stream1.png',
                       'setup_stream1.png')
         time.sleep(5)
         CF.take_image(pdf, RZ.monitor_stream_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\monitor_stream1.png',
+                      'D:\\Automation\\Projects\\screenshot\\monitor_stream1.png',
                       'monitor_stream1.png')
         print("Connection secure....")
         time.sleep(5)
@@ -47,11 +47,11 @@ class RZ_A2M:
         CF.click_button(RZ.face_start_button_path)
         CF.wait_until_progress("Showing fast demo video")
         time.sleep(5)
-        CF.take_image(pdf, RZ.setup_stream_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\setup_stream_2'
+        CF.take_image(pdf, RZ.setup_stream_path, 'D:\\Automation\\Projects\\screenshot\\setup_stream_2'
                                                  '.png',
                       'setup_stream_2.png')
         time.sleep(5)
-        CF.take_image(pdf, RZ.monitor_stream_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, RZ.monitor_stream_path, 'D:\\Automation\\Projects\\screenshot'
                                                    '\\monitor_stream_2.png', 'monitor_stream_2.png')
         time.sleep(5)
         CF.update_progress_log(pdf)
@@ -77,10 +77,10 @@ class RZ_A2M:
         CF.wait_until_connection_path()
         time.sleep(5)
         CF.write_result(pdf, 'Barcode_scanner_function : ', 'START EVALUATING')
-        CF.take_image(pdf, RZ.setup_stream_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\setup_stream_2'
+        CF.take_image(pdf, RZ.setup_stream_path, 'D:\\Automation\\Projects\\screenshot\\setup_stream_2'
                                                  '.png', 'setup_stream_2.png')
         time.sleep(5)
-        CF.take_image(pdf, RZ.monitor_stream_path, 'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot'
+        CF.take_image(pdf, RZ.monitor_stream_path, 'D:\\Automation\\Projects\\screenshot'
                                                    '\\monitor_stream_2.png', 'monitor_stream_2.png')
         time.sleep(5)
         print('click stop')
