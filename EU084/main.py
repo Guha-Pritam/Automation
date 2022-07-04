@@ -67,7 +67,7 @@ class EU084:
         CF.click_button(EU.maximize_graph)
         time.sleep(5)
         CF.take_image(pdf, EU.graph_path,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\auto_graph.png',
+                      'D:\\Automation\\Projects\\screenshot\\auto_graph.png',
                       'auto_graph.png')
         time.sleep(5)
         CF.click_button(EU.maximize_graph)

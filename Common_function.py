@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import os
 # import pyaudio
 import wave
-import constants as CS
+import Projects.constants as CS
 
 url = CS.evm_url
 screenshot_path = r"./screenshot"
@@ -171,6 +171,7 @@ class common:
             for line in latest_progres_data:
                 pdf1.set_text_color(0, 0, 0)
                 pdf1.cell(0, 10, txt=line, ln=1, align='L')
+                print("[|| NEW_PROGRESS__LOG ||] ", line)
 
     def slave_log_path(self, pdf1):
         global SLAVE_LOG

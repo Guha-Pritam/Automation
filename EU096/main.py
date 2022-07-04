@@ -16,6 +16,8 @@ def header_function():
     if "Ready" in connectText.text:
         CF.write_header(pdf, 'EU096')
         CF.wait_until_old_progress("START EVALUATING")
+        CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
+        CF.old_update_progress_log(pdf)
         # GOING LIVE VIDEO
         hover = CF.driver.find_element(By.XPATH, CS.old_live_video_xpath)
         CF.actions.move_to_element(hover).perform()
@@ -23,15 +25,12 @@ def header_function():
         CF.driver.implicitly_wait(0.5)
         CF.driver.switch_to.frame(CF.driver.find_element(By.XPATH, CS.old_switch_to_frame))
         CF.wait_until_clickable(CS.old_refresh_button)
-        time.sleep(10)
+        time.sleep(12)
         print('Clicked REFRESH button')
 
         CF.driver.switch_to.parent_frame()
-        CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
-        CF.old_update_progress_log(pdf)
         CF.take_image(pdf, CS.old_live_video_xpath,
-                      'D:\\Automation\\Projects\\screenshot\\live_image.png',
-                      'live_image.png')
+                      'D:\\Automation\\Projects\\screenshot\\live_image.png', 'live_image.png')
 
 
 class EU096:
