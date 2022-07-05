@@ -72,7 +72,7 @@ class EU065:
         CF.write_result(pdf, 'RGB-Control-Function : ', 'SYSTEM READY')
         time.sleep(5)
         CF.take_image(pdf, EU.iframe,
-                      'D:\\TenXer\\gmail_login\\Run_all_BOARDS\\screenshot\\pre_RGB_live.png',
+                      'D:\\Automation\\Projects\\screenshot\\pre_RGB_live.png',
                       'pre_RGB_live.png')
         time.sleep(5)
         CF.click_button(EU.control_path)

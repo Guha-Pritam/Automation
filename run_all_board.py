@@ -12,9 +12,9 @@ while 1:
 
     # FOR ALL FUNCTIONS
     if choice == 1:
-        # from CN268.main import CN268
-        # CN_268 = CN268()
-        # CN_268.header_function()
+        from CN268.main import CN268
+        CN_268 = CN268()
+        CN_268.header_function()
 
         # from CN274.main import CN274
         # CN_274 = CN274()
@@ -28,9 +28,9 @@ while 1:
         # CN_300 = CN300()
         # CN_300.full_function()
 
-        from EU096.main import EU096
-        EU_096 = EU096()
-        EU_096.full_function()
+        # from EU096.main import EU096
+        # EU_096 = EU096()
+        # EU_096.full_function()
 
         # from AS104.main import AS104
         # AS_104 = AS104()
@@ -64,33 +64,37 @@ while 1:
         # RZ_A2M = RZ_A2M()
         # RZ_A2M.face_detection_function()
 
+        from CN243.main import CN243
+        CN_243 = CN243()
+        CN_243.connected_rgb_function()
+
         exit()
 
     # FOR 2ND FUNCTIONS
     if choice == 3:
-        from EU065.main import EU065
-        EU = EU065()
-        EU.RGB_control_function()
+        # from EU065.main import EU065
+        # EU = EU065()
+        # EU.RGB_control_function()
 
-        from CN157.main import CN157
-        CN_157 = CN157()
-        CN_157.auto_testing()
+        # from CN157.main import CN157
+        # CN_157 = CN157()
+        # CN_157.auto_testing()
+        #
+        # from EU036.main import EU036
+        # EU_036 = EU036()
+        # EU_036.temperature_control_function()
 
-        from EU036.main import EU036
-        EU_036 = EU036()
-        EU_036.temperature_control_function()
+        # from EU045.main import EU045
+        # EU_045 = EU045()
+        # EU_045.humidity_shot_function()
 
-        from EU045.main import EU045
-        EU_045 = EU045()
-        EU_045.humidity_shot_function()
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
 
-        from EU084.main import EU084
-        EU_084 = EU084()
-        EU_084.auto_mode()
-
-        from RZ_A2M.main import RZ_A2M
-        RZ_A2M = RZ_A2M()
-        RZ_A2M.barcode_scanner_function()
+        # from RZ_A2M.main import RZ_A2M
+        # RZ_A2M = RZ_A2M()
+        # RZ_A2M.barcode_scanner_function()
 
         exit()
 

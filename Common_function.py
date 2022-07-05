@@ -300,6 +300,10 @@ class common:
     def wait_until_connection_path(self):
         self.wait.until(EC.text_to_be_present_in_element((By.XPATH, CS.connection_path), "Ready"))
 
+    def slider(self, PATH):
+        Slider = self.driver.find_element(By.XPATH, PATH)
+        self.actions.drag_and_drop_by_offset(Slider, 90, 0).perform()
+
     # def Text_To_Pdf(txt_File, Pdf_file):
     #     pdf = FPDF())
     #     pdf.add_page()

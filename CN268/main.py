@@ -46,13 +46,13 @@ class CN268:
             time.sleep(5)
 
             CF.slave_log_path(pdf)
-            CF.click_button(CS.Connect_Button)
-            CF.driver.close()
-
             pdf.set_font("Arial", 'B', size=12)
             pdf.cell(0, 7, txt='Current date and time : ', align='L')
             pdf.cell(0, 7, txt=self.date_time, align='R')
+
             pdf.output('CN268_result.pdf')
+            CF.click_button(CS.Connect_Button)
+            CF.driver.close()
 
 
 if __name__ == "__main__":
