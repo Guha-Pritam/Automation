@@ -12,9 +12,9 @@ while 1:
 
     # FOR ALL FUNCTIONS
     if choice == 1:
-        from CN268.main import CN268
-        CN_268 = CN268()
-        CN_268.header_function()
+        # from CN268.main import CN268
+        # CN_268 = CN268()
+        # CN_268.header_function()
 
         # from CN274.main import CN274
         # CN_274 = CN274()
@@ -28,13 +28,17 @@ while 1:
         # CN_300 = CN300()
         # CN_300.full_function()
 
-        # from EU096.main import EU096
-        # EU_096 = EU096()
-        # EU_096.full_function()
+        from EU096.main import EU096
+        EU_096 = EU096()
+        EU_096.full_function()
 
-        # from AS104.main import AS104
-        # AS_104 = AS104()
-        # AS_104.in_rush()
+        # from CN243.main import CN243
+        # CN_243 = CN243()
+        # CN_243.connected_rgb_function()
+
+        # from JP167.main import JP167
+        # JP_167 = JP167()
+        # JP_167.power_line_communication()
 
         exit()
 
@@ -56,17 +60,13 @@ while 1:
         # EU_045 = EU045()
         # EU_045.alcohol_gas_function()
 
-        # from EU084.main import EU084
-        # EU_084 = EU084()
-        # EU_084.auto_mode()
+        from EU084.main import EU084
+        EU_084 = EU084()
+        EU_084.auto_mode()
 
         # from RZ_A2M.main import RZ_A2M
         # RZ_A2M = RZ_A2M()
         # RZ_A2M.face_detection_function()
-
-        from CN243.main import CN243
-        CN_243 = CN243()
-        CN_243.connected_rgb_function()
 
         exit()
 
@@ -79,7 +79,7 @@ while 1:
         # from CN157.main import CN157
         # CN_157 = CN157()
         # CN_157.auto_testing()
-        #
+
         # from EU036.main import EU036
         # EU_036 = EU036()
         # EU_036.temperature_control_function()
@@ -88,9 +88,9 @@ while 1:
         # EU_045 = EU045()
         # EU_045.humidity_shot_function()
 
-        # from EU084.main import EU084
-        # EU_084 = EU084()
-        # EU_084.auto_mode()
+        from EU084.main import EU084
+        EU_084 = EU084()
+        EU_084.auto_mode()
 
         # from RZ_A2M.main import RZ_A2M
         # RZ_A2M = RZ_A2M()

@@ -1,5 +1,6 @@
 import datetime
 import time
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
@@ -35,7 +36,7 @@ class common:
         # self.options.add_argument("--enable-infobars")
         # self.options.add_argument("--enable-extensions")
 
-        self.wait = WebDriverWait(self.driver, 280)
+        self.wait = WebDriverWait(self.driver, 320)
         self.e = datetime.datetime.now()
         self.driver.maximize_window()
 
@@ -303,6 +304,10 @@ class common:
     def slider(self, PATH):
         Slider = self.driver.find_element(By.XPATH, PATH)
         self.actions.drag_and_drop_by_offset(Slider, 90, 0).perform()
+
+    def slider_reverse(self, PATH):
+        Slider = self.driver.find_element(By.XPATH, PATH)
+        self.actions.drag_and_drop_by_offset(Slider, -140, 90).perform()
 
     # def Text_To_Pdf(txt_File, Pdf_file):
     #     pdf = FPDF())

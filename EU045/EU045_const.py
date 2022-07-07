@@ -11,7 +11,7 @@ alcohol_gas_shot = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/d
 
 device_button = '//*[@id="stepformcontainer"]/tx-elements[1]/div[2]/div/div/div/button'
 
-sensor_button = '//*[@id="stepformcontainer"]/tx-elements[2]/div[2]/div/div/div/button'
+sensor_button = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div/div/div/ul/li[6]/div/div/tx-elements/div[2]/div/div/form/tx-elements[2]/div[2]/div/div/div/button'
 
 graph_button = '//*[@id="stepformcontainer"]/tx-elements[3]/div[2]/div/div/div/button'
 

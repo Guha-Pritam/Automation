@@ -16,6 +16,7 @@ def header_function():
     if "Ready" in connectText.text:
         CF.click_button(CS.live_button)
         CF.write_header(pdf, 'EU045')
+        CF.wait_until_connection_path()
         CF.wait_until_progress("SYSTEM READY")
         CF.write_result(pdf, 'Connection : ', 'START EVALUATING')
         CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\appli_video'
@@ -61,7 +62,7 @@ class EU045:
 
         # CLICKING Sensors GAS SHOT
         CF.click_button(EU.sensor_button)
-        time.sleep(5)
+        time.sleep(10)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Alcohol_gas_testing : SENSORS -- ', 'Inducing of gas turned OFF')
         CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\sensors_gas'
@@ -130,7 +131,7 @@ class EU045:
 
         # CLICKING Sensors GAS SHOT
         CF.click_button(EU.sensor_button)
-        time.sleep(5)
+        time.sleep(10)
         CF.wait_until_connection_path()
         CF.write_result(pdf, 'Humidity_shot_function : SENSORS -- ', 'Humidifier turned OFF')
         CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot'
@@ -199,7 +200,7 @@ class EU045:
 
         # CLICKING Sensors GAS SHOT
         CF.click_button(EU.sensor_button)
-        time.sleep(5)
+        time.sleep(10)
         CF.wait_until_connection_path()
         CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\sensors_temp'
                                                       '.png', 'sensors_temp.png')
@@ -262,7 +263,7 @@ class EU045:
 
         # CLICKING Sensors GAS SHOT
         CF.click_button(EU.sensor_button)
-        time.sleep(5)
+        time.sleep(10)
         CF.wait_until_connection_path()
         CF.take_image(pdf, EU.application_video_path, 'D:\\Automation\\Projects\\screenshot\\air_temp'
                                                       '.png', 'air_temp.png')

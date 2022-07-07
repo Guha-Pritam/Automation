@@ -22,7 +22,7 @@ def header_function():
         print('Click CONTINUE button')
 
         CF.driver.switch_to.parent_frame()
-        time.sleep(10)
+        time.sleep(12)
         CF.write_result(pdf, 'Connection : ', 'SYSTEM READY')
         CF.old_update_progress_log(pdf)
         CF.take_image(pdf, EU.iframe,

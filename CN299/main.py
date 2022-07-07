@@ -26,7 +26,7 @@ def header_function():
         CF.driver.implicitly_wait(0.5)
         CF.driver.switch_to.frame(CF.driver.find_element(By.XPATH, CS.old_switch_to_frame))
         CF.wait_until_clickable(CS.old_refresh_button)
-        time.sleep(8)
+        time.sleep(5)
         print('vvvvv')
 
         CF.driver.switch_to.parent_frame()

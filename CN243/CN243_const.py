@@ -22,7 +22,7 @@ INTENSITY_PATH = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/div
 
 RGB_CONNECTED_BUTTON ='//*[@id="stepformcontainer"]/tx-elements[2]/div[2]/div/div/div/div'
 
+SLIDER_BUTTON = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div/div/div/ul/li[5]/div/div/tx-elements/div[2]/div/div/form/tx-elements[4]/div[2]/div/div/div[2]/span[5]'
 
-
-
+I_AGREE_BUTTON = '/html/body/div[2]/button'
 
