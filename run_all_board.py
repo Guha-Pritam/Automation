@@ -28,9 +28,9 @@ while 1:
         # CN_300 = CN300()
         # CN_300.full_function()
 
-        from EU096.main import EU096
-        EU_096 = EU096()
-        EU_096.full_function()
+        # from EU096.main import EU096
+        # EU_096 = EU096()
+        # EU_096.full_function()
 
         # from CN243.main import CN243
         # CN_243 = CN243()
@@ -39,6 +39,10 @@ while 1:
         # from JP167.main import JP167
         # JP_167 = JP167()
         # JP_167.power_line_communication()
+
+        from CN118.main import CN118
+        CN_118 = CN118()
+        CN_118.mini_power_monitor_function()
 
         exit()
 
@@ -56,13 +60,13 @@ while 1:
         # EU_036 = EU036()
         # EU_036.slider_function()
 
-        # from EU045.main import EU045
-        # EU_045 = EU045()
-        # EU_045.alcohol_gas_function()
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.alcohol_gas_function()
 
-        from EU084.main import EU084
-        EU_084 = EU084()
-        EU_084.auto_mode()
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
 
         # from RZ_A2M.main import RZ_A2M
         # RZ_A2M = RZ_A2M()
@@ -84,13 +88,13 @@ while 1:
         # EU_036 = EU036()
         # EU_036.temperature_control_function()
 
-        # from EU045.main import EU045
-        # EU_045 = EU045()
-        # EU_045.humidity_shot_function()
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.humidity_shot_function()
 
-        from EU084.main import EU084
-        EU_084 = EU084()
-        EU_084.auto_mode()
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
 
         # from RZ_A2M.main import RZ_A2M
         # RZ_A2M = RZ_A2M()

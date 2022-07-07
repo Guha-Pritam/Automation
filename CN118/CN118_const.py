@@ -16,10 +16,8 @@ MOVE_DOWN_BUTTON = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/d
 
 PARAMETER_PATH = '//*[@id="1d26afe3-e87c-c3a9-8825-18fac9c05953"]/div/tx-elements/div[2]/div[1]'
 
-LIVE_VIDEO_PATH = '/html/body/div[2]'
+LIVE_VIDEO_PATH = '//*[@id="6290b7ec-8cdb-0fba-e406-221413d93cf6"]/div/tx-elements/div[2]/div/div'
 
-
-
-'connected $> Initializing CN118 - Mini Power Monitor Solution $> SYSTEM READY $> START EVALUATING $> Load one is ON $> Load one is ON $> Load two is ON $> Load Three is ON $> Pressed KEY1 switch in CN118 Board $> Pressed KEY2 switch in CN118 Board'
+MAXIMIZE_LIVE_VIDEO = '//*[@id="6290b7ec-8cdb-0fba-e406-221413d93cf6"]/div/tx-elements/div[2]/div/div/div[1]/div/div[1]'
 
 
