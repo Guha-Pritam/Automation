@@ -46,8 +46,14 @@ class CN118:
         CF.click_button(CN.MAXIMIZE_LIVE_VIDEO)
         time.sleep(5)
         CF.take_image(pdf, CN.LIVE_VIDEO_PATH,
-                      'D:\\Automation\\Projects\\screenshot\\Induc_LIVE_video.png',
-                      'Induc_LIVE_video.png')
+                      'D:\\Automation\\Projects\\screenshot\\INDUC_LIVE_video.png',
+                      'INDUC_LIVE_video.png')
+        CF.take_image(pdf, CN.GRAPH_PATH,
+                      'D:\\Automation\\Projects\\screenshot\\INDUC_GRAPH_video.png',
+                      'INDUC_GRAPH_video.png')
+        CF.take_image(pdf, CN.PARAMETER_PATH,
+                      'D:\\Automation\\Projects\\screenshot\\INDUC_PARA_video.png',
+                      'INDUC_PARA_video.png')
         time.sleep(3)
         CF.click_button(CN.MAXIMIZE_LIVE_VIDEO)
         CF.update_progress_log(pdf)
