@@ -75,43 +75,43 @@ while 1:
         exit()
 
     # FOR 2ND FUNCTIONS
-    # if choice == 3:
-    #     # from EU065.main import EU065
-    #     # EU = EU065()
-    #     # EU.RGB_control_function()
-    #
-    #     # from CN157.main import CN157
-    #     # CN_157 = CN157()
-    #     # CN_157.auto_testing()
-    #
-    #     # from EU036.main import EU036
-    #     # EU_036 = EU036()
-    #     # EU_036.temperature_control_function()
-    #
-    #     from EU045.main import EU045
-    #     EU_045 = EU045()
-    #     EU_045.humidity_shot_function()
-    #
-    #     # from EU084.main import EU084
-    #     # EU_084 = EU084()
-    #     # EU_084.auto_mode()
-    #
-    #     # from RZ_A2M.main import RZ_A2M
-    #     # RZ_A2M = RZ_A2M()
-    #     # RZ_A2M.barcode_scanner_function()
-    #
-    #     exit()
-    #
-    # if choice == 4:
-    #     from EU045.main import EU045
-    #     EU_045 = EU045()
-    #     EU_045.temperature_function()
-    #
-    # if choice == 5:
-    #     from EU045.main import EU045
-    #     EU_045 = EU045()
-    #     EU_045.clear_air_function()
-    #
-    # if choice == 5:
-    #     print('Thanks for executing me!!!!')
-    #     exit()
+    if choice == 3:
+        # from EU065.main import EU065
+        # EU = EU065()
+        # EU.RGB_control_function()
+
+        # from CN157.main import CN157
+        # CN_157 = CN157()
+        # CN_157.auto_testing()
+
+        # from EU036.main import EU036
+        # EU_036 = EU036()
+        # EU_036.temperature_control_function()
+
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.humidity_shot_function()
+
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
+
+        # from RZ_A2M.main import RZ_A2M
+        # RZ_A2M = RZ_A2M()
+        # RZ_A2M.barcode_scanner_function()
+
+        exit()
+
+    if choice == 4:
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.temperature_function()
+
+    if choice == 5:
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.clear_air_function()
+
+    if choice == 5:
+        print('Thanks for executing me!!!!')
+        exit()
