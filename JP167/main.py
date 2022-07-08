@@ -153,7 +153,7 @@ class JP167:
         time.sleep(5)
 
         CF.click_button(JP.TARGET_2_BUTTON)
-        CF.wait_until_connection_path()
+        time.sleep(5)
         CF.click_button(JP.TARGET_1_BUTTON)
         CF.update_progress_log(pdf)
 
