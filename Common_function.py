@@ -17,15 +17,14 @@ screenshot_path = r"./screenshot"
 if not os.path.isdir(screenshot_path):
     os.makedirs(screenshot_path)
 
-PROGRESS_LOG = []
-OLD_PROGRESS_LOG = []
-VR_LOG = []
-SLAVE_LOG = []
-INFORMATION = []
-
 
 class common:
     def __init__(self):
+        self.PROGRESS_LOG = []
+        self.OLD_PROGRESS_LOG = []
+        self.VR_LOG = []
+        self.SLAVE_LOG = []
+        self.INFORMATION = []
         self.options = webdriver.ChromeOptions()
         # self.options.add_argument(r'--user-data-dir=C:\Users\THIS PC\Desktop\gmail login\session')
         self.options.add_argument('--profile-directory=session')
@@ -161,13 +160,12 @@ class common:
     #         pdf1.cell(0, 25, txt="FAIL", ln=1, align='R')
 
     def update_progress_log(self, pdf1):
-        global PROGRESS_LOG
         pdf1.set_font("Arial", size=12)
         path = '//*[@id="default-dashboard"]/div[1]/nav/div[2]/form'
         connectText = self.driver.find_element(By.XPATH, path)
         progress_log = self.driver.find_element(By.XPATH, '//*[@id="console_status"]').text.split("\n")
-        latest_progres_data = progress_log[len(PROGRESS_LOG):]
-        PROGRESS_LOG = progress_log
+        latest_progres_data = progress_log[len(self.PROGRESS_LOG):]
+        self.PROGRESS_LOG = progress_log
         if "Ready" in connectText.text:
             for line in latest_progres_data:
                 pdf1.set_text_color(0, 0, 0)
@@ -175,42 +173,39 @@ class common:
                 print("[|| NEW_PROGRESS__LOG ||] ", line)
 
     def slave_log_path(self, pdf1):
-        global SLAVE_LOG
         pdf1.set_font("Arial", size=12)
         path = '//*[@id="default-dashboard"]/div[1]/nav/div[2]/form'
         connectText = self.driver.find_element(By.XPATH, path)
         progress_log = self.driver.find_element(By.XPATH, '//*[@id="85e79079-07e7-7719-6bda-59d3bf7dd5a6"]').text.split(
             "\n")
-        latest_slave_data = progress_log[len(SLAVE_LOG):]
-        SLAVE_LOG = progress_log
+        latest_slave_data = progress_log[len(self.SLAVE_LOG):]
+        self.SLAVE_LOG = progress_log
         if "Ready" in connectText.text:
             for line in latest_slave_data:
                 pdf1.set_text_color(0, 0, 0)
                 pdf1.cell(0, 10, txt=line, ln=1, align='L')
 
     def update_VR_log(self, pdf1):
-        global VR_LOG
         pdf1.set_font("Arial", size=12)
         path = '//*[@id="default-dashboard"]/div[1]/nav/div[2]/form'
         connectText = self.driver.find_element(By.XPATH, path)
         progress_log = self.driver.find_element(By.XPATH, '//*[@id="11f1e3dc-7e13-2931-ab0c-e3893cab89d3"]').text.split(
             "\n")
-        latest_progres_data = progress_log[len(VR_LOG):]
-        VR_LOG = progress_log
+        latest_progres_data = progress_log[len(self.VR_LOG):]
+        self.VR_LOG = progress_log
         if "Ready" in connectText.text:
             for line in latest_progres_data:
                 pdf1.set_text_color(0, 0, 0)
                 pdf1.cell(0, 10, txt=line, ln=1, align='L')
 
     def old_take_information(self, pdf1):
-        global INFORMATION
         pdf1.set_font("Arial", size=12)
         path = '//*[@id="navbar6"]/ul[3]/li[2]/div'
         connectText = self.driver.find_element(By.XPATH, path)
         print(connectText.text)
         information_log = self.driver.find_element(By.XPATH, CS.old_information).text.split("   ")
-        latest_information_data = information_log[len(INFORMATION):]
-        INFORMATION = information_log
+        latest_information_data = information_log[len(self.INFORMATION):]
+        self.INFORMATION = information_log
         if "Ready" in connectText.text:
             for line in latest_information_data:
                 pdf1.set_text_color(0, 0, 0)
@@ -218,14 +213,13 @@ class common:
                 print("[|| INFORMATION ||] ", line)
 
     def old_update_progress_log(self, pdf1):
-        global OLD_PROGRESS_LOG
         pdf1.set_font("Arial", size=12)
         path = '//*[@id="navbar6"]/ul[3]/li[2]/div'
         connectText = self.driver.find_element(By.XPATH, path)
         print(connectText.text)
         progress_log = self.driver.find_element(By.XPATH, CS.old_progress_log_path).text.split("\n")
-        latest_progres_data = progress_log[len(OLD_PROGRESS_LOG):]
-        OLD_PROGRESS_LOG = progress_log
+        latest_progres_data = progress_log[len(self.OLD_PROGRESS_LOG):]
+        self.OLD_PROGRESS_LOG = progress_log
         if "Ready" in connectText.text:
             for line in latest_progres_data:
                 # print('progress log cm')

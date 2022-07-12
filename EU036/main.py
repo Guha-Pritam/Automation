@@ -68,7 +68,6 @@ class EU036:
 
         CF.write_result(pdf, 'Temperature-control-test : ', 'Blowing Hot-air')
         time.sleep(2)
-        CF.update_progress_log(pdf)
         CF.click_button(EU.maximize_live_video)
         time.sleep(5)
         CF.take_image(pdf, EU.main_video_path, 'D:\\Automation\\Projects\\screenshot\\main_video_2.png',
@@ -78,6 +77,9 @@ class EU036:
         time.sleep(3)
         CF.click_button(EU.temperature_control_button)
         time.sleep(5)
+        CF.wait_until_progress('Blower Stopped')
+        CF.update_progress_log(pdf)
+
         pdf.set_font("Arial", 'B', size=12)
         pdf.cell(0, 7, txt='Current date and time : ', align='L')
         pdf.cell(0, 7, txt=self.date_time, align='R')

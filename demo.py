@@ -1,22 +1,117 @@
-import xlsxwriter
+import time
 
-workbook = xlsxwriter.Workbook('Example3.xlsx')
-worksheet = workbook.add_worksheet("My sheet")
-bold = workbook.add_format({'bold': 1})
+while 1:
+    choice = int(input('Run All Boards : \n'
+                       '1: Run_ALL_function:\n'
+                       '2: Run_1st_function_allBoards:\n'
+                       '3: Run_2nd_function_allBoards:\n'
+                       '4: Run_3nd_function_allBoards:\n'
+                       '5: Run_4nd_function_allBoards:\n'
+                       '6: Exit\n'
+                       'Option: \n'))
 
-scores = (
-    ['CN143', "PASS"],
-    ['JP167', "PASS"],
-    ['JP128', "PASS"],
-    ['CN456', "PASS"],
-)
+    # FOR ALL FUNCTIONS
+    if choice == 1:
+        from CN268.main import CN268
+        CN_268 = CN268()
+        CN_268.header_function()
 
-row = 0
-col = 0
+        # from CN274.main import CN274
+        # CN_274 = CN274()
+        # CN_274.full_function()
 
-for name, score in (scores):
-    worksheet.write(row, col, name)
-    worksheet.write(row, col + 1, score, bold)
-    row += 1
+        # from CN299.main import CN299
+        # CN_299 = CN299()
+        # CN_299.maximize_voltage()
 
-workbook.close()
+        # from CN300.main import CN300
+        # CN_300 = CN300()
+        # CN_300.full_function()
+
+        # from EU096.main import EU096
+        # EU_096 = EU096()
+        # EU_096.full_function()
+
+        # from CN243.main import CN243
+        # CN_243 = CN243()
+        # CN_243.connected_rgb_function()
+
+        # from JP167.main import JP167
+        # JP_167 = JP167()
+        # JP_167.power_line_communication()
+
+        # from CN118.main import CN118
+        # CN_118 = CN118()
+        # CN_118.mini_power_monitor_function()
+
+        exit()
+
+    # FOR 1ST FUNCTIONS
+    if choice == 2:
+        # from EU065.main import EU065
+        # EU = EU065()
+        # EU.light_control_function()
+
+        # from CN157.main import CN157
+        # CN_157 = CN157()
+        # CN_157.manual_testing()
+
+        # from EU036.main import EU036
+        # EU_036 = EU036()
+        # EU_036.slider_function()
+
+        # from EU045.main import EU045
+        # EU_045 = EU045()
+        # EU_045.alcohol_gas_function()
+
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
+
+        from RZ_A2M.main import RZ_A2M
+        RZ_A2M = RZ_A2M()
+        RZ_A2M.face_detection_function()
+
+        exit()
+
+    # FOR 2ND FUNCTIONS
+    if choice == 3:
+        # from EU065.main import EU065
+        # EU = EU065()
+        # EU.RGB_control_function()
+
+        # from CN157.main import CN157
+        # CN_157 = CN157()
+        # CN_157.auto_testing()
+
+        from EU036.main import EU036
+        EU_036 = EU036()
+        EU_036.temperature_control_function()
+
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.humidity_shot_function()
+
+        # from EU084.main import EU084
+        # EU_084 = EU084()
+        # EU_084.auto_mode()
+
+        # from RZ_A2M.main import RZ_A2M
+        # RZ_A2M = RZ_A2M()
+        # RZ_A2M.barcode_scanner_function()
+
+        exit()
+
+    if choice == 4:
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.temperature_function()
+
+    if choice == 5:
+        from EU045.main import EU045
+        EU_045 = EU045()
+        EU_045.clear_air_function()
+
+    if choice == 5:
+        print('Thanks for executing me!!!!')
+        exit()
