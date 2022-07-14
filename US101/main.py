@@ -1,9 +1,9 @@
 import time
 from fpdf import FPDF
 from selenium.webdriver.common.by import By
-from US101 import US101_const as US
-from Common_function import common
-import constants as CS
+from Projects.US101 import US101_const as US
+from Projects.Common_function import common
+import Projects.constants as CS
 # import pyautogui
 
 pdf = FPDF()

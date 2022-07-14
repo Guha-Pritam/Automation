@@ -14,10 +14,9 @@ MOVE_UP_BUTTON = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/div
 
 MOVE_DOWN_BUTTON = '/html/body/div[1]/div/ng-content/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div/div/div/ul/li[5]/div/div/tx-elements/div[2]/div/div/form/tx-elements[4]/div[2]/div/div/div'
 
-PARAMETER_PATH = '//*[@id="1d26afe3-e87c-c3a9-8825-18fac9c05953"]/div/tx-elements/div[2]/div[1]'
+PARAMETER_PATH = '//*[@id="1d26afe3-e87c-c3a9-8825-18fac9c05953"]'
 
 LIVE_VIDEO_PATH = '//*[@id="6290b7ec-8cdb-0fba-e406-221413d93cf6"]/div/tx-elements/div[2]/div/div'
 
 MAXIMIZE_LIVE_VIDEO = '//*[@id="6290b7ec-8cdb-0fba-e406-221413d93cf6"]/div/tx-elements/div[2]/div/div/div[1]/div/div[1]'
-
 

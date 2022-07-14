@@ -86,6 +86,12 @@ def RZ_A2M():
     RZ_A2M.face_detection_function()
 
 
+def AS104():
+    from AS104.main import AS104
+    AS_104 = AS104()
+    AS_104.config_function()
+
+
 def EU065_2nd():
     from EU065.main import EU065
     EU = EU065()
@@ -124,7 +130,7 @@ def RZ_A2M_2nd():
 
 if __name__ == "__main__":
     # ////////////////////////////////////////////////////////////////////
-    # test1 = threading.Thread(target=CN268)
+    test1 = threading.Thread(target=CN268)
     # test2 = threading.Thread(target=CN274)
     # test3 = threading.Thread(target=CN299)
     # test4 = threading.Thread(target=CN300)
@@ -140,11 +146,12 @@ if __name__ == "__main__":
     # test12 = threading.Thread(target=EU045)
     # test13 = threading.Thread(target=EU084)
     # test14 = threading.Thread(target=RZ_A2M)
+    # test15 = threading.Thread(target=AS104)
 
     # RUN 2ND FUNCTION-----------------------
     # test9_2nd = threading.Thread(target=EU065_2nd)
     # test10_2nd = threading.Thread(target=CN157_2nd)
-    test11_2nd = threading.Thread(target=EU036_2nd)
+    # test11_2nd = threading.Thread(target=EU036_2nd)
     # test12_2nd = threading.Thread(target=EU045_2nd)
     # test13_2nd = threading.Thread(target=EU084_2nd)
     # test14_2nd = threading.Thread(target=RZ_A2M_2nd)
@@ -152,7 +159,7 @@ if __name__ == "__main__":
     # //////////////////////////////////////////////////////////////////////
     # test1.start()
     # time.sleep(3)
-
+    #
     # test2.start()
     # time.sleep(3)
     #
@@ -161,7 +168,7 @@ if __name__ == "__main__":
     #
     # test4.start()
     # time.sleep(3)
-
+    #
     # test5.start()
     # time.sleep(3)
 
@@ -170,7 +177,7 @@ if __name__ == "__main__":
     #
     # test7.start()
     # time.sleep(3)
-    #
+
     # test8.start()
     # time.sleep(3)
 
@@ -193,6 +200,9 @@ if __name__ == "__main__":
     #
     # test14.start()
     # time.sleep(3)
+    # #
+    # test15.start()
+    # time.sleep(3)
 
     # 2ND FUNCTION
 
@@ -201,9 +211,9 @@ if __name__ == "__main__":
     #
     # test10_2nd.start()
     # time.sleep(3)
-    #
-    test11_2nd.start()
-    time.sleep(3)
+
+    # test11_2nd.start()
+    # time.sleep(3)
     #
     # test12_2nd.start()
     # time.sleep(3)
@@ -217,7 +227,7 @@ if __name__ == "__main__":
     # ///////////////////////////////////////////////////////////////
     # test1.join()
     # time.sleep(3)
-
+    #
     # test2.join()
     # time.sleep(3)
     #
@@ -226,7 +236,7 @@ if __name__ == "__main__":
     #
     # test4.join()
     # time.sleep(3)
-
+    #
     # test5.join()
     # time.sleep(3)
 
@@ -235,7 +245,7 @@ if __name__ == "__main__":
     #
     # test7.join()
     # time.sleep(3)
-    #
+
     # test8.join()
     # time.sleep(3)
 
@@ -258,6 +268,9 @@ if __name__ == "__main__":
     #
     # test14.join()
     # time.sleep(3)
+    #
+    # test15.join()
+    # time.sleep(3)
 
     # 2ND FUNCTION------------------------------------------------------
 
@@ -266,9 +279,9 @@ if __name__ == "__main__":
     #
     # test10_2nd.join()
     # time.sleep(3)
-    #
-    test11_2nd.join()
-    time.sleep(3)
+
+    # test11_2nd.join()
+    # time.sleep(3)
     #
     # test12_2nd.join()
     # time.sleep(3)
