@@ -218,11 +218,10 @@ class common:
         connectText = self.driver.find_element(By.XPATH, path)
         print(connectText.text)
         progress_log = self.driver.find_element(By.XPATH, CS.old_progress_log_path).text.split("\n")
-        latest_progres_data = progress_log[len(self.OLD_PROGRESS_LOG):]
+        latest_progress_data = progress_log[len(self.OLD_PROGRESS_LOG):]
         self.OLD_PROGRESS_LOG = progress_log
         if "Ready" in connectText.text:
-            for line in latest_progres_data:
-                # print('progress log cm')
+            for line in latest_progress_data:
                 pdf1.set_text_color(0, 0, 0)
                 pdf1.cell(0, 10, txt=line, ln=1, align='L')
                 print("[|| OLD_PROGRESS__LOG ||] ", line)
@@ -336,4 +335,25 @@ class common:
     #
     #
     # def Remove_File(First_file):
-#     os.remove(First_file)
+    #     os.remove(First_file)
+
+    # def touchless_login(self):
+    #     self.driver.get(CS.evm_url)
+    #     self.click_button(CS.login)
+    #     time.sleep(3)
+    #
+    #     self.click_button(CS.login_url_1)
+    #     time.sleep(5)
+    #
+    #     email = self.driver.find_element(By.XPATH, CS.email_1)
+    #     email.send_keys(CS.username)
+    #     time.sleep(5)
+    #
+    #     password = self.driver.find_element(By.XPATH, CS.passwrd_1)
+    #     password.send_keys(CS.passwrd)
+    #     self.click_button(CS.submit)
+    #     time.sleep(15)
+    #
+    #     self.driver.get('https://renesas.evmlabs.com/user/form624fdb5bc555b02c8c23cc7d?APP=5f12f3d2c555b026c55ae500')
+        # self.wait_until_clickable(CS.connect_jp128)
+        # self.wait_until_clickable(CS.Connect_Button)

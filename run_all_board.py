@@ -130,14 +130,14 @@ def RZ_A2M_2nd():
 
 if __name__ == "__main__":
     # ////////////////////////////////////////////////////////////////////
-    test1 = threading.Thread(target=CN268)
-    # test2 = threading.Thread(target=CN274)
-    # test3 = threading.Thread(target=CN299)
-    # test4 = threading.Thread(target=CN300)
-    # test5 = threading.Thread(target=EU096)
-    # test6 = threading.Thread(target=CN243)
-    # test7 = threading.Thread(target=JP167)
-    # test8 = threading.Thread(target=CN118)
+    # test1 = threading.Thread(target=CN268)
+    test2 = threading.Thread(target=CN274)
+    test3 = threading.Thread(target=CN299)
+    test4 = threading.Thread(target=CN300)
+    test5 = threading.Thread(target=EU096)
+    test6 = threading.Thread(target=CN243)
+    test7 = threading.Thread(target=JP167)
+    test8 = threading.Thread(target=CN118)
 
     # RUN 1ST FUNCTION---------------------
     # test9 = threading.Thread(target=EU065)
@@ -159,36 +159,36 @@ if __name__ == "__main__":
     # //////////////////////////////////////////////////////////////////////
     # test1.start()
     # time.sleep(3)
-    #
-    # test2.start()
-    # time.sleep(3)
-    #
-    # test3.start()
-    # time.sleep(3)
-    #
-    # test4.start()
-    # time.sleep(3)
-    #
-    # test5.start()
-    # time.sleep(3)
 
-    # test6.start()
-    # time.sleep(3)
-    #
-    # test7.start()
-    # time.sleep(3)
+    test2.start()
+    time.sleep(3)
 
-    # test8.start()
-    # time.sleep(3)
+    test3.start()
+    time.sleep(3)
+
+    test4.start()
+    time.sleep(3)
+
+    test5.start()
+    time.sleep(3)
+
+    test6.start()
+    time.sleep(3)
+
+    test7.start()
+    time.sleep(3)
+
+    test8.start()
+    time.sleep(3)
 
     # 1ST FUNCTION--------------
 
     # test9.start()
     # time.sleep(3)
-    #
+
     # test10.start()
     # time.sleep(3)
-    #
+
     # test11.start()
     # time.sleep(3)
     #
@@ -200,7 +200,7 @@ if __name__ == "__main__":
     #
     # test14.start()
     # time.sleep(3)
-    # #
+    #
     # test15.start()
     # time.sleep(3)
 
@@ -211,55 +211,55 @@ if __name__ == "__main__":
     #
     # test10_2nd.start()
     # time.sleep(3)
-
+    #
     # test11_2nd.start()
     # time.sleep(3)
     #
     # test12_2nd.start()
     # time.sleep(3)
-    #
+
     # test13_2nd.start()
     # time.sleep(3)
-    #
+
     # test14_2nd.start()
     # time.sleep(3)
 
     # ///////////////////////////////////////////////////////////////
     # test1.join()
     # time.sleep(3)
-    #
-    # test2.join()
-    # time.sleep(3)
-    #
-    # test3.join()
-    # time.sleep(3)
-    #
-    # test4.join()
-    # time.sleep(3)
-    #
-    # test5.join()
-    # time.sleep(3)
 
-    # test6.join()
-    # time.sleep(3)
-    #
-    # test7.join()
-    # time.sleep(3)
+    test2.join()
+    time.sleep(3)
 
-    # test8.join()
-    # time.sleep(3)
+    test3.join()
+    time.sleep(3)
+
+    test4.join()
+    time.sleep(3)
+
+    test5.join()
+    time.sleep(3)
+
+    test6.join()
+    time.sleep(3)
+
+    test7.join()
+    time.sleep(3)
+
+    test8.join()
+    time.sleep(3)
 
     # 1ST FUNCTION------------------------------------------------------
 
     # test9.join()
     # time.sleep(3)
-    #
+
     # test10.join()
     # time.sleep(3)
-    #
+
     # test11.join()
     # time.sleep(3)
-    #
+
     # test12.join()
     # time.sleep(3)
     #
@@ -279,15 +279,15 @@ if __name__ == "__main__":
     #
     # test10_2nd.join()
     # time.sleep(3)
-
+    #
     # test11_2nd.join()
     # time.sleep(3)
     #
     # test12_2nd.join()
     # time.sleep(3)
-    #
+    # #
     # test13_2nd.join()
     # time.sleep(3)
-    #
+
     # test14_2nd.join()
     # time.sleep(3)
